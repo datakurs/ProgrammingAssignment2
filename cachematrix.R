@@ -19,6 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
         x <<- a
         inv <<- NULL
     }
+    
     # Function to return the main matrix.
     
     get <- function() x
@@ -39,7 +40,7 @@ makeCacheMatrix <- function(x = matrix()) {
          setinv=setinv,
          getinv=getinv)
 }
-}
+
 
 ## This function finds the inverse of a matrix-like object created using
 ## makeCacheMatrix. If the inverse has already been found, the cached version
