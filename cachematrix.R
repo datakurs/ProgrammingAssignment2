@@ -1,7 +1,7 @@
 ## Calculating and re-calculating the inverse of a matrix can be an expensive
 ## operation. This codes creates a matrix-like object that allows you to
 ## compute the inverse once, store it, and retrieve it when needed.
-
+##
 ## makeCacheMatrix creates a matrix-like object that is actually a list.
 ##
 ## The function takes one input:
@@ -54,7 +54,7 @@ cacheSolve <- function(x, ...) {
   # Grab current version of inverse.
   inv <- x$getinv()
   
-  ## If inverse already computed, return cached version.
+  # If inverse already computed, return cached version.
   if(!is.null(inv)) {
     message('getting cached inverse')
     return(inv)
